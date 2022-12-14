@@ -135,10 +135,11 @@ void deleteAtEnd(){
         return;
     }
     nodeType *temp= head;
-    while(temp != NULL){
+    while(temp->next->next != NULL){
         temp = temp->next;
     }
-    free(temp);
+    free(temp->next);
+    temp->next=NULL;
 }
 void deleteAtPos(){
     if(head == NULL){
