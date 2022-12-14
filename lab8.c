@@ -1,3 +1,4 @@
+//WAP to implement array implemented linear queue
 #include<stdio.h>
 #define max 5
 typedef struct {
